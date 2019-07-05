@@ -23,7 +23,7 @@ Each line you add will define how to open a specific filetype. The syntax looks 
 
 For example, here are two lines that will cause Filezilla to default to Notepad++ for editing HTML and CSS files:
 
-```html "C:\Program Files\Notepad++\notepad++.exe"```
+```html "C:\Program Files\Notepad++\notepad++.exe"```<br>
 ```css "C:\Program Files\Notepad++\notepad++.exe"```
 
 Then just hit the 'OK' button to save the settings. Make sure you remember the space between the filetype and the path, and the double-quotes around the path. If done correctly, you should now be able to use 'View/Edit' to open up files in your specified text editor or IDE.
