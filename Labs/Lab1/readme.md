@@ -93,7 +93,7 @@ This will open up an editor prompt like this:
 
 <img src="https://i.imgur.com/dCgvqaK.png">
 
-You can either manually enter the HTML in, or you can copy and paste it into the terminal. The paste command in the terminal is right-click. You should change the example HTML to use your own name and a short message. Once you're done, hit <kbd>CTRL</kbd>+<kbd>X<kbd>, then hit <kbd>y<kbd> and <kbd>ENTER</kbd> to save your changes and exit Nano.
+You can either manually enter the HTML in, or you can copy and paste it into the terminal. The paste command in the terminal is right-click. You should change the example HTML to use your own name and a short message. Once you're done, hit <kbd>CTRL</kbd>+<kbd>X</kbd>, then hit <kbd>y</kbd> and <kbd>ENTER</kbd> to save your changes and exit Nano.
 
 Once you have completed this, you should be able to refresh your webpage in the browser and see something similar to this:
 
@@ -130,7 +130,7 @@ It should also use at least any 5 items from the following list:
 * Links (at least two, including one internal fragment/anchor link)
 * Image (using either external or internal source)
 * List (Either ordered or unordered)
-* Emphasis (Appropriate use of the <strong> inline HTML element)
+* Emphasis (Appropriate use of the ```<strong>``` inline HTML element)
 * A second HTML page, with a link to and from the page back to ```hello.html```
 
 You will be marked for including the required number of features, as well as implementing them properly (lists have list items, links work, page is semantically organized).
