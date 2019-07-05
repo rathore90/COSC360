@@ -134,3 +134,5 @@ It should also use at least any 5 items from the following list:
 * A second HTML page, with a link to and from the page back to ```hello.html```
 
 You will be marked for including the required number of features, as well as implementing them properly (lists have list items, links work, page is semantically organized).
+
+**Note, there is nothing to submit for this lab - You will be marked based on your server.**
