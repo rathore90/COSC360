@@ -19,7 +19,7 @@ Open Filezilla. Click the 'Edit' menu at the top, and select the 'Settings...' o
 
 <img src="https://i.imgur.com/nvwiAQq.png">
 
-Each line you add will define how to open a specific filetype. The syntax looks like this ```<filetype> <path>```, where the filetype is the extension of the files you wish to edit, and path is path to your editing application that you got from the 'Target' field.
+Each line you add will define how to open a specific filetype. The syntax looks like this ```<filetype> <path>```, where the filetype is the extension of the files you wish to edit, and path is path to your editing application that you got from the 'Target' field. **Each filetype association (filetype-path combo) must go on a new line!**
 
 For example, here are two lines that will cause Filezilla to default to Notepad++ for editing HTML and CSS files:
 
