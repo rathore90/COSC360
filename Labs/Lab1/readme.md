@@ -9,6 +9,8 @@ You will receive the username and password login details from your instructor fo
 - [Connecting to Your Server](#connecting)
 - [Installing Apache](#installing-apache)
 - [Writing a simple HTML Page for Apache](#basic-html)
+- [Connecting via Filezilla](#filezilla)
+- [Writing HTML Files](#html-main)
 
 <a name="connecting"></a>
 ## Connecting to Your Server
@@ -42,7 +44,7 @@ Enter ```y``` to accept the updates. Your server may appear stop on the final cl
 
 >Cleanup    : glibc-2.17-260.el7_6.5.x86_64                              40/40
 
-However, it should complete given time.
+However, it should complete given time. If not, you can safely forcibly kill the process using <kbd>CTRL</kbd>+<kbd>C</kbd>.
 
 Once we have updated our software packages, we can go ahead and install Apache. To do that, run the following command:
 
@@ -91,8 +93,44 @@ This will open up an editor prompt like this:
 
 <img src="https://i.imgur.com/dCgvqaK.png">
 
-You can either manually enter the HTML in, or you can copy and paste it into the terminal. The paste command in the terminal is right-click. You should change the example HTML to use your own name and a short message.
+You can either manually enter the HTML in, or you can copy and paste it into the terminal. The paste command in the terminal is right-click. You should change the example HTML to use your own name and a short message. Once you're done, hit <kbd>CTRL</kbd>+<kbd>X<kbd>, then hit <kbd>y<kbd> and <kbd>ENTER</kbd> to save your changes and exit Nano.
 
 Once you have completed this, you should be able to refresh your webpage in the browser and see something similar to this:
 
 <img src="https://i.imgur.com/ybPvpOC.png" width="100%">
+
+<a name="filezilla"></a>
+## Connecting to our Server with Filezilla (1 mark)
+
+While Nano is good for making small edits, it's not very good for managing multiple files. A much easier way is to use a File Transfer Protocol (FTP) client to exchange files back and forth between our own machine and the server.
+
+Open up Filezilla, and enter your IP address, username, password, and set the port to 22. Secure FTP uses the same port as SSH because the SFTP protocol is based on the secure SSH connection. It should look like this:
+
+<img src="https://i.imgur.com/B4ULSki.png">
+
+Hit the 'Quickconnect' button. Filezilla will then connect to the server. Use the file browser on the bottom-right of the application to navigate to your web root at ```/var/www/html```. You'll need to go up a folder (```..```) to reach your server root first.
+
+<img src="https://i.imgur.com/QrexunM.png">
+
+Right-click in the file browser and select 'Create new file'. Create a file called ```lab1.html```, then right click it and select 'View/Edit'. This will download a copy of the file for you to work on locally. When you save changes to the file, Filezilla will prompt you to upload the changed file back to the server, overwriting the old version:
+
+<img src="https://i.imgur.com/Ubo1JQ0.png">
+
+Try adding some text to the ```lab1.html``` file, save your changes, and then let Filezilla upload the changed filed. Try going to ```http://*yourIPhere*/lab1.html```. You should now the file changes you made reflected on that page.
+
+<a name="html-main"></a>
+## Writing HTML Files (5 marks)
+
+The last segment of this lab is free-form. You must create an html page called ```hello.html```. It must follow the HTML standards and practices discussed in lectures, and should implement the basic semantic HTML elements that we discussed in class. This includes ```header```, ```main```, and ```footer```. You can use the ```example.html``` to see how this should be formatted.
+
+It should also use at least any 5 items from the following list:
+
+* Heading (use at least two different kinds of header, appropriately)
+* Paragraphs
+* Links (at least two, including one internal fragment/anchor link)
+* Image (using either external or internal source)
+* List (Either ordered or unordered)
+* Emphasis (Appropriate use of the <strong> inline HTML element)
+* A second HTML page, with a link to and from the page back to ```hello.html```
+
+You will be marked for including the required number of features, as well as implementing them properly (lists have list items, links work, page is semantically organized).
